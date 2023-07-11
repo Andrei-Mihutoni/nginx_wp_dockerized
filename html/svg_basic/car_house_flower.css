@@ -1,0 +1,22 @@
+svg {
+    margin-top: 200px;
+}
+
+.wheels {
+    stroke: #616060;
+    fill: #616060;
+    stroke-width: 1;
+}
+
+.hood {
+    stroke: #69b4d6;
+    fill: #69b4d6;
+    stroke-width: 1;
+}
+#car {
+    animation: none 3s ease
+ }
+
+
+@keyframes moveRight {
+   50% { transform: translate(300px, 0px)}

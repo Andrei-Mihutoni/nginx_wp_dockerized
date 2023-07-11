@@ -41,6 +41,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
+      - ./html:/usr/share/nginx/html
       - wordpress:/var/www/html
       - ./nginx-conf:/etc/nginx/conf.d
       - certbot-etc:/etc/letsencrypt
@@ -58,6 +59,7 @@ services:
     command: certonly --webroot --webroot-path=/var/www/html --email andrei.mihutoni@gmail.com --agree-tos --no-eff-email --force-renewal -d andreimihutoni.com -d www.andreimihutoni.com
 
 volumes:
+  html:
   certbot-etc:
   wordpress:
   dbdata:
